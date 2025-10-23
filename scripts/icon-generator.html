@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate PWA Icons</title>
+</head>
+<body>
+  <h1>PWA Icon Generator</h1>
+  <canvas id="canvas192" width="192" height="192"></canvas>
+  <canvas id="canvas512" width="512" height="512"></canvas>
+  <canvas id="canvas180" width="180" height="180"></canvas>
+
+  <div>
+    <h2>Download Icons:</h2>
+    <a id="download192" download="icon-192x192.png">Download 192x192</a><br>
+    <a id="download512" download="icon-512x512.png">Download 512x512</a><br>
+    <a id="download180" download="apple-touch-icon.png">Download 180x180</a>
+  </div>
+
+  <script>
+    function drawIcon(canvas, size) {
+      const ctx = canvas.getContext('2d');
+
+      // Background
+      ctx.fillStyle = '#10b981';
+      ctx.fillRect(0, 0, size, size);
+
+      // Rounded corners
+      ctx.globalCompositeOperation = 'destination-in';
+      ctx.beginPath();
+      ctx.roundRect(0, 0, size, size, size / 8);
+      ctx.fill();
+      ctx.globalCompositeOperation = 'source-over';
+
+      // Eyes
+      const scale = size / 512;
+      const centerX = size / 2;
+      const centerY = size * 0.4;
+
+      // Left eye
+      ctx.fillStyle = '#ffffff';
+      ctx.beginPath();
+      ctx.ellipse(centerX - 60 * scale, centerY, 50 * scale, 60 * scale, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = '#1f2937';
+      ctx.beginPath();
+      ctx.ellipse(centerX - 55 * scale, centerY + 5 * scale, 28 * scale, 35 * scale, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = '#ffffff';
+      ctx.beginPath();
+      ctx.ellipse(centerX - 50 * scale, centerY - 5 * scale, 12 * scale, 15 * scale, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Right eye
+      ctx.fillStyle = '#ffffff';
+      ctx.beginPath();
+      ctx.ellipse(centerX + 60 * scale, centerY, 50 * scale, 60 * scale, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = '#1f2937';
+      ctx.beginPath();
+      ctx.ellipse(centerX + 65 * scale, centerY + 5 * scale, 28 * scale, 35 * scale, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = '#ffffff';
+      ctx.beginPath();
+      ctx.ellipse(centerX + 70 * scale, centerY - 5 * scale, 12 * scale, 15 * scale, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Q text
+      ctx.fillStyle = '#ffffff';
+      ctx.font = `bold ${140 * scale}px Arial, sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('Q', centerX, size * 0.75);
+
+      return canvas.toDataURL('image/png');
+    }
+
+    // Generate icons
+    const canvas192 = document.getElementById('canvas192');
+    const canvas512 = document.getElementById('canvas512');
+    const canvas180 = document.getElementById('canvas180');
+
+    const dataUrl192 = drawIcon(canvas192, 192);
+    const dataUrl512 = drawIcon(canvas512, 512);
+    const dataUrl180 = drawIcon(canvas180, 180);
+
+    document.getElementById('download192').href = dataUrl192;
+    document.getElementById('download512').href = dataUrl512;
+    document.getElementById('download180').href = dataUrl180;
+
+    console.log('Icons generated! Click the download links to save.');
+  </script>
+</body>
+</html>

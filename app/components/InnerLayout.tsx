@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import LogoDesign2 from './LogoDesign2';
+import PWAInstallPrompt from './PWAInstallPrompt';
 
 export default function InnerLayout({
   children,
@@ -152,6 +153,9 @@ export default function InnerLayout({
             </div>
           </nav>
         )}
+
+        {/* PWA Install Prompt */}
+        <PWAInstallPrompt />
       </div>
     </div>
   );
