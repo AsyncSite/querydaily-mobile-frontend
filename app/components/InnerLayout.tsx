@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import LogoDesign2 from './LogoDesign2';
 import PWAInstallPrompt from './PWAInstallPrompt';
+import IOSInstallPrompt from './IOSInstallPrompt';
 
 export default function InnerLayout({
   children,
@@ -154,8 +155,9 @@ export default function InnerLayout({
           </nav>
         )}
 
-        {/* PWA Install Prompt */}
+        {/* PWA Install Prompts */}
         <PWAInstallPrompt />
+        <IOSInstallPrompt />
       </div>
     </div>
   );
