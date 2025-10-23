@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: '쿼리데일리 - 매일 3문제, 다른 사람의 생각 엿보기',
   description: '현직 개발자들의 면접 답변을 보며 성장하는 모바일 학습 플랫폼',
   manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: '/icons/apple-touch-icon.png',
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
