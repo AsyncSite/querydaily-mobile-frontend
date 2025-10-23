@@ -124,12 +124,19 @@ querydaily-mobile-frontend/
 - Preview URL: Auto-generated per PR
 
 **배포 가이드:**
+- [VERCEL_CI_SETUP.md](./VERCEL_CI_SETUP.md) - ⭐ **CI/CD 자동 배포 설정** (권장)
 - [DEPLOYMENT.md](./DEPLOYMENT.md) - 전체 배포 프로세스
-- [VERCEL_SETUP.md](./VERCEL_SETUP.md) - Step-by-step Vercel 설정
+- [VERCEL_SETUP.md](./VERCEL_SETUP.md) - Step-by-step Vercel 수동 설정
 
-**자동 배포:**
-- `main` 브랜치 push → Production 배포
-- PR 생성 → Preview 배포
+**자동 배포 (GitHub Actions):**
+- `main` 브랜치 push → Production 배포 (`m.querydaily.asyncsite.com`)
+- PR 생성 → Preview 배포 (임시 URL + PR 코멘트)
+- Discord 알림 자동 발송 (배포 성공/실패)
+
+**특징:**
+- ✅ Vercel 대시보드 Import 없이 순수 CI/CD로 배포
+- ✅ GitHub Secrets만 설정하면 자동 배포 시작
+- ✅ PR Preview URL을 자동으로 코멘트로 추가
 
 ## 📄 라이선스
 
