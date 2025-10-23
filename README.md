@@ -111,8 +111,25 @@ querydaily-mobile-frontend/
 **백엔드 서비스:** `querydaily-mobile-service`
 - Local: `http://localhost:8388`
 - Docker: `asyncsite-querydaily-mobile-service:8388`
+- Production: `https://api.asyncsite.com`
 
 **현재 상태:** 하드코딩된 목업 데이터 사용 (백엔드 연동 예정)
+
+**API 클라이언트:** `lib/api/` 모듈 준비 완료
+
+## 🚀 배포
+
+**Vercel 배포:**
+- Production URL: `m.querydaily.asyncsite.com`
+- Preview URL: Auto-generated per PR
+
+**배포 가이드:**
+- [DEPLOYMENT.md](./DEPLOYMENT.md) - 전체 배포 프로세스
+- [VERCEL_SETUP.md](./VERCEL_SETUP.md) - Step-by-step Vercel 설정
+
+**자동 배포:**
+- `main` 브랜치 push → Production 배포
+- PR 생성 → Preview 배포
 
 ## 📄 라이선스
 
