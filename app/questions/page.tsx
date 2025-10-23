@@ -66,7 +66,7 @@ function QuestionsContent() {
             {filteredQuestions.length}개 질문
           </p>
         </div>
-        <Link href="/prototype11/categories" className="text-gray-500">
+        <Link href="/categories" className="text-gray-500">
           ← 카테고리
         </Link>
       </div>
@@ -79,7 +79,7 @@ function QuestionsContent() {
               <strong>{categoryName}</strong> 카테고리 보는 중
             </span>
             <Link
-              href="/prototype11/questions"
+              href="/questions"
               className="text-sm text-indigo-600 hover:underline"
             >
               전체 보기
@@ -93,7 +93,7 @@ function QuestionsContent() {
         {filteredQuestions.map((question) => (
           <Link
             key={question.id}
-            href={`/prototype11/questions/${question.id}`}
+            href={`/questions/${question.id}`}
             className="block bg-white rounded-2xl p-5 shadow-md border border-gray-200 hover:border-indigo-400 hover:shadow-lg transition-all"
           >
             <div className="mb-3">

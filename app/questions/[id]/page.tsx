@@ -132,15 +132,15 @@ export default function QuestionPage({ params }: { params: { id: string } }) {
 
   const handleNext = () => {
     if (nextId) {
-      router.push(`/prototype11/questions/${nextId}`);
+      router.push(`/questions/${nextId}`);
     } else {
-      router.push('/prototype11/dashboard');
+      router.push('/dashboard');
     }
   };
 
   const handlePrev = () => {
     if (prevId) {
-      router.push(`/prototype11/questions/${prevId}`);
+      router.push(`/questions/${prevId}`);
     }
   };
 
@@ -148,7 +148,7 @@ export default function QuestionPage({ params }: { params: { id: string } }) {
     <div className="px-6 py-8 space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">
-          <Link href="/prototype11/dashboard" className="text-gray-500">
+          <Link href="/dashboard" className="text-gray-500">
             ← 뒤로
           </Link>
           <div className="flex items-center gap-4">

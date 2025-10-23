@@ -54,7 +54,7 @@ export default function MyPage() {
                   </div>
                 </div>
                 <Link
-                  href="/prototype11/shop"
+                  href="/shop"
                   className="text-sm text-indigo-600 font-semibold hover:text-indigo-800"
                 >
                   관리 →
@@ -63,7 +63,7 @@ export default function MyPage() {
             </div>
           ) : (
             <Link
-              href="/prototype11/shop"
+              href="/shop"
               className="block bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl p-4 text-white hover:shadow-lg transition-all"
             >
               <div className="flex items-center justify-between">
@@ -104,7 +104,7 @@ export default function MyPage() {
               <div className="text-4xl font-bold text-emerald-600">35 💎</div>
             </div>
             <Link
-              href="/prototype11/shop"
+              href="/shop"
               className="px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-bold text-sm hover:shadow-lg transition-all"
             >
               충전하기
@@ -216,7 +216,7 @@ export default function MyPage() {
               <div className="text-5xl mb-3">🔒</div>
               <p className="text-sm text-gray-700 mb-3">북마크는 프리미엄 전용 기능입니다</p>
               <Link
-                href="/prototype11/shop"
+                href="/shop"
                 className="inline-block px-5 py-2 bg-indigo-600 text-white rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-all"
               >
                 프리미엄 가입하기

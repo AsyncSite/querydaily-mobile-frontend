@@ -38,13 +38,13 @@ export default function OnboardingPage() {
   };
 
   const handleSkip = () => {
-    router.push('/prototype11');
+    router.push('/');
   };
 
   const handleKakaoLogin = () => {
     // 실제로는 카카오 OAuth 호출
     // 프로토타입에서는 개인화 설정으로 이동
-    router.push('/prototype11/personalization');
+    router.push('/personalization');
   };
 
   const currentStepData = steps[currentStep];

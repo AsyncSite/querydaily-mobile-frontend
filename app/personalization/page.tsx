@@ -88,19 +88,19 @@ export default function PersonalizationPage() {
   };
 
   const handleSkip = () => {
-    router.push('/prototype11/dashboard');
+    router.push('/dashboard');
   };
 
   const handleComplete = () => {
     // TODO: Save to backend
     console.log('Personalization data:', { field, techStacks, experience });
-    router.push('/prototype11/dashboard');
+    router.push('/dashboard');
   };
 
   const handleCompanyVerification = () => {
     // TODO: Implement email verification
     setShowCompanyVerification(false);
-    router.push('/prototype11/dashboard');
+    router.push('/dashboard');
   };
 
   const progress = (step / 4) * 100;

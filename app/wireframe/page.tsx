@@ -5,19 +5,19 @@ import Link from 'next/link';
 export default function WireframePage() {
   const screens = [
     // Onboarding flow
-    { id: 'onb1', title: '온보딩 1/3', emoji: '📝', href: '/prototype11/onboarding', color: 'from-emerald-400 to-emerald-600', description: '가치 제안', section: 'onboarding' },
+    { id: 'onb1', title: '온보딩 1/3', emoji: '📝', href: '/onboarding', color: 'from-emerald-400 to-emerald-600', description: '가치 제안', section: 'onboarding' },
     { id: 'onb2', title: '온보딩 2/3', emoji: '👀', href: '#', color: 'from-teal-400 to-teal-600', description: '기능 소개', section: 'onboarding' },
     { id: 'onb3', title: '온보딩 3/3', emoji: '💎', href: '#', color: 'from-emerald-400 to-emerald-600', description: '인사이트 안내', section: 'onboarding' },
-    { id: 'kakao', title: '카카오 로그인', emoji: '💬', href: '/prototype11', color: 'from-yellow-400 to-yellow-600', description: '소셜 로그인', section: 'onboarding' },
-    { id: 'perso', title: '개인화 설정', emoji: '🎯', href: '/prototype11/personalization', color: 'from-indigo-400 to-indigo-600', description: '관심 주제 선택', section: 'onboarding' },
+    { id: 'kakao', title: '카카오 로그인', emoji: '💬', href: '/', color: 'from-yellow-400 to-yellow-600', description: '소셜 로그인', section: 'onboarding' },
+    { id: 'perso', title: '개인화 설정', emoji: '🎯', href: '/personalization', color: 'from-indigo-400 to-indigo-600', description: '관심 주제 선택', section: 'onboarding' },
 
     // Main app
-    { id: 'dash', title: '대시보드', emoji: '🏠', href: '/prototype11/dashboard', color: 'from-emerald-400 to-emerald-600', description: '오늘의 카드 스택', section: 'main' },
-    { id: 'quest', title: '질문 상세', emoji: '📖', href: '/prototype11/questions/1', color: 'from-purple-400 to-purple-600', description: '답변 열람', section: 'main' },
-    { id: 'cat', title: '카테고리', emoji: '📂', href: '/prototype11/categories', color: 'from-indigo-400 to-indigo-600', description: '탐색 & 전환', section: 'main' },
-    { id: 'arch', title: '아카이브', emoji: '📚', href: '/prototype11/archive', color: 'from-blue-400 to-blue-600', description: '지난 질문 복습', section: 'main' },
-    { id: 'shop', title: '상점', emoji: '💎', href: '/prototype11/shop', color: 'from-orange-400 to-amber-600', description: '인사이트 & 프리미엄', section: 'main' },
-    { id: 'mypage', title: '마이페이지', emoji: '👤', href: '/prototype11/mypage', color: 'from-gray-400 to-gray-600', description: '프로필 & 설정', section: 'main' },
+    { id: 'dash', title: '대시보드', emoji: '🏠', href: '/dashboard', color: 'from-emerald-400 to-emerald-600', description: '오늘의 카드 스택', section: 'main' },
+    { id: 'quest', title: '질문 상세', emoji: '📖', href: '/questions/1', color: 'from-purple-400 to-purple-600', description: '답변 열람', section: 'main' },
+    { id: 'cat', title: '카테고리', emoji: '📂', href: '/categories', color: 'from-indigo-400 to-indigo-600', description: '탐색 & 전환', section: 'main' },
+    { id: 'arch', title: '아카이브', emoji: '📚', href: '/archive', color: 'from-blue-400 to-blue-600', description: '지난 질문 복습', section: 'main' },
+    { id: 'shop', title: '상점', emoji: '💎', href: '/shop', color: 'from-orange-400 to-amber-600', description: '인사이트 & 프리미엄', section: 'main' },
+    { id: 'mypage', title: '마이페이지', emoji: '👤', href: '/mypage', color: 'from-gray-400 to-gray-600', description: '프로필 & 설정', section: 'main' },
   ];
 
   const flows = [
@@ -33,7 +33,7 @@ export default function WireframePage() {
         {/* Header */}
         <div className="mb-12 text-center">
           <Link
-            href="/prototype11"
+            href="/"
             className="inline-block mb-4 text-sm text-gray-500 hover:text-gray-700"
           >
             ← 메인으로 돌아가기

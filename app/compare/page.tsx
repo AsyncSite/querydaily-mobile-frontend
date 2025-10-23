@@ -222,7 +222,7 @@ export default function ComparePage() {
         {/* Back to Original */}
         <div className="mt-8 text-center">
           <Link
-            href="/prototype11/dashboard"
+            href="/dashboard"
             className="inline-block px-6 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold hover:bg-gray-300 transition-all"
           >
             ← 원래 프로토타입으로 돌아가기

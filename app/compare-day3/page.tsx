@@ -320,13 +320,13 @@ export default function CompareDay3Page() {
         {/* Navigation */}
         <div className="flex gap-4">
           <Link
-            href="/prototype11/compare-next-day"
+            href="/compare-next-day"
             className="flex-1 px-6 py-3 bg-white text-gray-700 rounded-xl font-semibold hover:bg-gray-100 transition-all text-center border-2 border-gray-300"
           >
             ← Day 2 비교로 돌아가기
           </Link>
           <Link
-            href="/prototype11"
+            href="/"
             className="flex-1 px-6 py-3 bg-gray-700 text-white rounded-xl font-semibold hover:bg-gray-800 transition-all text-center"
           >
             메인으로 돌아가기

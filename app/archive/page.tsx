@@ -63,7 +63,7 @@ export default function ArchivePage() {
       {/* Header */}
       <div className="mb-6">
         <Link
-          href="/prototype11/dashboard"
+          href="/dashboard"
           className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-4"
         >
           <span>←</span>
@@ -158,7 +158,7 @@ export default function ArchivePage() {
               {day.questions.map((question) => (
                 <Link
                   key={question.id}
-                  href={`/prototype11/questions/${question.id}`}
+                  href={`/questions/${question.id}`}
                   className="block p-4 bg-gray-50 rounded-xl hover:bg-emerald-50 hover:border-emerald-200 border border-transparent transition-all"
                 >
                   <div className="flex items-start gap-3">

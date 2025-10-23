@@ -147,7 +147,7 @@ export default function DashboardPage() {
 
             {/* Random Past Question Card */}
             <Link
-              href="/prototype11/questions/11"
+              href="/questions/11"
               className="block bg-white rounded-2xl p-6 shadow-md border-2 border-purple-200 hover:border-purple-400 hover:shadow-lg transition-all"
             >
               <div className="flex gap-2 mb-4">
@@ -183,7 +183,7 @@ export default function DashboardPage() {
       {/* Archive Button - Only show if not completed, or show differently if completed */}
       {!isCompleted ? (
         <Link
-          href="/prototype11/archive"
+          href="/archive"
           className="block bg-white rounded-2xl p-5 shadow-md border-2 border-gray-200 hover:border-emerald-400 hover:shadow-lg transition-all"
         >
           <div className="flex items-center justify-between">
@@ -199,7 +199,7 @@ export default function DashboardPage() {
         </Link>
       ) : (
         <Link
-          href="/prototype11/archive"
+          href="/archive"
           className="block bg-gray-50 rounded-2xl p-4 border-2 border-gray-200 hover:border-gray-300 transition-all text-center"
         >
           <div className="text-sm font-semibold text-gray-600">
@@ -369,7 +369,7 @@ function QuestionCard({ question, index, stackIndex, totalCount, currentIndex, o
 
         {/* View Button */}
         <Link
-          href={`/prototype11/questions/${question.id}`}
+          href={`/questions/${question.id}`}
           className="block w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-bold text-center hover:shadow-xl transition-all mb-3"
         >
           답변 보기 →
